@@ -15,3 +15,9 @@ for (let i = 0; i < matriz.length; i++) {
 const rta = matriz.flat(3);
 console.log('for', newArray);
 console.log('flat', rta);
+
+console.log("-".repeat(7));
+
+const array = [["🍕", "🍔"], "🍕" , ["🥞"]];
+const test = array.flat();
+console.log('test: ', test);

@@ -40,3 +40,9 @@ const rta3 = products.find(item => item.id === '🍔')
 console.log('find', rta3);
 const rta4 = products.findIndex(item => item.id === '🍔')
 console.log('findIndex', rta4);
+
+console.log("-".repeat(7));
+
+array = [ '🍕', '🍔', '🍕', '🥞' ];
+const test = array.findIndex(item => item === '🍔');
+console.log('test: ', test)

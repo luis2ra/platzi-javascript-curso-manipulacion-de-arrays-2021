@@ -1,12 +1,20 @@
 const months = ['March', 'Jan', 'Feb', 'Dec'];
 months.sort();
 console.log(months);
+console.log("-".repeat(7));
+
 const numbers = [1, 30, 4, 21, 100000];
-numbers.sort((a,b) => b - a);
+// numbers.sort();
+numbers.sort((a,b) => a - b);
+// numbers.sort((a,b) => b - a);
 console.log(numbers);
+console.log("-".repeat(7));
+
 const words = ['réservé', 'premier', 'communiqué', 'café', 'adieu', 'éclair', 'banana'];
 words.sort((a,b) => a.localeCompare(b));
 console.log(words);
+console.log("-".repeat(7));
+
 const orders = [
     {
       customerName: "Nicolas",
@@ -29,5 +37,5 @@ const orders = [
       delivered: true,
     },
   ];
-  orders.sort((a,b) => b.total - a.total);
-  console.log(orders);
+orders.sort((a,b) => b.total - a.total);
+console.log(orders);

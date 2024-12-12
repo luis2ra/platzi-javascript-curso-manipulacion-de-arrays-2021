@@ -8,3 +8,9 @@ const newArray = letters.map(item => item + '++');
 // }
 console.log('original', letters);
 console.log('new', newArray);
+
+console.log("-".repeat(7));
+
+const array = ['a', 'bb', 'ccc'];
+const test = array.map(item => item.length);
+console.log(test);
