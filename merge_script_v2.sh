@@ -2,7 +2,7 @@
 branches=("17-sort")
 for branch in "${branches[@]}"; do
     git checkout $branch
-    git merge 8-some
+    git merge 8-some --no-edit
     if [ $? -eq 0 ]; then
         echo "Fusión exitosa en $branch"
         git push origin $branch
